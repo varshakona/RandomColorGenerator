@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: monospace;
+    transition: all 0.2s linear;
+}
+body{
+    height: 100vh;
+    background: white;
+
+background-color: #b7b0b7;
+background-image: linear-gradient(0deg, #b7b0b7 0%, #4e696b 100%);
+/* background-image: linear-gradient(135deg, #926343 0%, #f8f6f5 100%); */
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*
+     WE ADDED ( OVERFLOW : HIDDEN ) TO REMOVE THE HORIZONTAL AND VERTICAL SCROLLBARS ON THE BROWSERS 
+    */
+    overflow: hidden;
+}
+h1{
+    font-size: 2.8rem;
+    color: solid black;
+    margin-top: 0.5rem;
+    margin: 2rem;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background-color: rgb(250, 251, 251);
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: #888383 0px 4px 8px 0px;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    /* transition: all 0.3s; */
+    /* transition: transform 0.5s ; */
+}
+button:hover{
+    /* background-color:rgb(32, 82, 119) ; */
+    background-color: #b7b0b7;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+    color: white;
+    /* transform: translateY(-3px); */
+}
+.color-container {
+    margin-top: 3rem;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 2rem;
+}
+.color-container .color-boxes h2{
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    padding: 5rem 5rem;
+    font-weight: 900;
+    font-size: rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* TRIED FOR CONTAINER QUERIES */
+
+/* .color-container .color-boxes{
+    background-color: rgb(255, 255, 255);
+    padding: 0.4rem;
+    box-shadow: #888383 0px 7px 29px 0px;
+    border-radius: 15px;
+    cursor: pointer;
+} */
+
+/* .color-container{
+    container-type: inline-size;
+    container-name: color-boxes;
+}
+@container color-boxes (min-width:800px) {
+    .color-boxes
+    {
+        background-color: rgb(255, 255, 255);
+    padding: 0.4rem;
+    box-shadow: #888383 0px 7px 29px 0px;
+    border-radius: 15px;
+    cursor: pointer;
+    } 
+} */
+
+/* @media screen (min-width:1200px) {
+    .button{
+        font-size: 0.8rem;
+    }
+    .color-boxes{
+        font-size: 1rem;
+    }
+} */
